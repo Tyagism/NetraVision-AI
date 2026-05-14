@@ -1,0 +1,35 @@
+# ═══════════════════════════════════════════════
+# NetraVisionAi — Requirements
+# Tested with Python 3.11+
+# ═══════════════════════════════════════════════
+
+# --- Core ---
+numpy==2.4.2
+opencv-python==4.13.0.92
+Pillow==12.1.1
+
+# --- AI/ML Runtime ---
+onnxruntime==1.24.2
+
+# --- Object Detection ---
+ultralytics==8.4.16
+
+# --- Depth Estimation ---
+torch>=2.1.0
+torchvision>=0.16.0
+timm==0.9.16
+
+# --- Audio ---
+sounddevice==0.5.5
+pydub==0.25.1
+piper-tts==1.4.1
+scipy>=1.11.0
+
+# --- Utilities ---
+python-dotenv==1.0.1
+pyyaml==6.0.1
+requests==2.31.0
+huggingface_hub>=0.21.0
+transformers>=4.43.0
+deep-translator==1.11.4
+parler-tts

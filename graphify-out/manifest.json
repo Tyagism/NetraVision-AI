@@ -1,0 +1,210 @@
+{
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\main.py": {
+    "mtime": 1778172421.060487,
+    "hash": "f351a37a67a733ce89d2fd221c98ef3d"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\netra_vision_ai_core.py": {
+    "mtime": 1772083620.9478776,
+    "hash": "ff4ff063cece627939f73571a8719e02"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\setup.py": {
+    "mtime": 1771994633.7862816,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\configs\\settings.py": {
+    "mtime": 1772083620.920865,
+    "hash": "d2020df6143767586813a313f414fd2e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\alert_manager.py": {
+    "mtime": 1778172421.060487,
+    "hash": "886093e68c008e055806149204a3f6cc"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\camera.py": {
+    "mtime": 1772083633.169709,
+    "hash": "0bdefc8fe76d96ae99bd9774374f59a8"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\depth.py": {
+    "mtime": 1772083835.952106,
+    "hash": "2e7d4958e4c6298bc28cdfa32a8eb5f2"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\detector.py": {
+    "mtime": 1772083633.184947,
+    "hash": "97a63de3214622fc9b79bc10a7adbfb3"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\ocr_reader.py": {
+    "mtime": 1772083633.184947,
+    "hash": "c6fa5eaa668820b5d68a88a59d8555a9"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\priority.py": {
+    "mtime": 1778172421.0346093,
+    "hash": "04424291f2360295b4eb9c540c359c3f"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\scene_describer.py": {
+    "mtime": 1772024237.9458783,
+    "hash": "45b38b7b83a72425e196ba44aa1f3442"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\spatial.py": {
+    "mtime": 1778172421.060487,
+    "hash": "c3842bfbc5f096741b5acf3f5cf84e69"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\tts_engine.py": {
+    "mtime": 1778172421.060487,
+    "hash": "ca16e2e858c272ff8209e5469b905b96"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\modules\\__init__.py": {
+    "mtime": 1772083085.4106164,
+    "hash": "0ab2da91fd16a6ef307954249d8d9b31"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\setup.py": {
+    "mtime": 1778152596.7848308,
+    "hash": "16da2ed2e1a72ec97c009a386d94e50c"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\gradio_demo\\app.py": {
+    "mtime": 1778152596.7519295,
+    "hash": "211a787b7339bcbaaeed15384cc10e27"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\model_init_scripts\\init_dummy_model.py": {
+    "mtime": 1778152596.7542512,
+    "hash": "4c03e9b062321f62cca12d3550aebb09"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\model_init_scripts\\init_dummy_model_with_encodec.py": {
+    "mtime": 1778152596.7553084,
+    "hash": "f2a323468d25fdff0156b212ac5c0095"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\model_init_scripts\\init_large_model.py": {
+    "mtime": 1778152596.7568176,
+    "hash": "dcb8257e2beeaeb8c6706afddd51f526"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\model_init_scripts\\init_model_600M.py": {
+    "mtime": 1778152596.7583086,
+    "hash": "c2c0efec78fd2402b71715ef9c40357c"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\push_to_hub_scripts\\push_dac_to_hub.py": {
+    "mtime": 1778152596.7611597,
+    "hash": "59b31086c08272cd7dc22cf4f3cc56df"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\helpers\\push_to_hub_scripts\\push_trained_parler_tts_to_hub.py": {
+    "mtime": 1778152596.762169,
+    "hash": "8cb05ebaf7af69e5a7d59edab026b13a"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\configuration_parler_tts.py": {
+    "mtime": 1778152596.7707324,
+    "hash": "ce36f2168c4902ec4c39893ac5bfd101"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\logits_processors.py": {
+    "mtime": 1778152596.7770686,
+    "hash": "4fbd7661b6e4638e2ccd02098698956e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\modeling_parler_tts.py": {
+    "mtime": 1778152596.7805696,
+    "hash": "b7508f07f96e264d071f9c1faec0fc8b"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\streamer.py": {
+    "mtime": 1778152596.7818308,
+    "hash": "df1dfd28ff7bfecf90df6409691bf528"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\__init__.py": {
+    "mtime": 1778152596.769732,
+    "hash": "cc9b4c3fe619f714bb87538659e9effe"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\dac_wrapper\\configuration_dac.py": {
+    "mtime": 1778152596.774331,
+    "hash": "bb4d7befa9a632828be9395ed319a532"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\dac_wrapper\\modeling_dac.py": {
+    "mtime": 1778152596.775563,
+    "hash": "43d1d15794381ba60b3f9518f61daf53"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\parler_tts\\dac_wrapper\\__init__.py": {
+    "mtime": 1778152596.7730203,
+    "hash": "2ed45dccd16c36cffe5c7a90767fe2ae"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\arguments.py": {
+    "mtime": 1778152596.789457,
+    "hash": "04dcaf6f24ffb6db41ff78dde83e866a"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\data.py": {
+    "mtime": 1778152596.7918847,
+    "hash": "545b906810b4e62cbf41c576ca82cab4"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\eval.py": {
+    "mtime": 1778152596.7938848,
+    "hash": "d1119ee9e00cf734eb98b0270f1ed400"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\run_parler_tts_training.py": {
+    "mtime": 1778152596.7958834,
+    "hash": "939ac23e797b61b63cfe978d494dce90"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\utils.py": {
+    "mtime": 1778152596.7973921,
+    "hash": "1a93df3386735dd7b36e9918e3cc8229"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\__init__.py": {
+    "mtime": 1778152596.7883523,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\benchmark.py": {
+    "mtime": 1772762367.1279771,
+    "hash": "c405d850fcc13a7ed3b45d8ee9ae5803"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\download_models.py": {
+    "mtime": 1772083633.1889455,
+    "hash": "89c9a6eb4697cbbac2b8db62b871d7d5"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\download_piper_voices.py": {
+    "mtime": 1772091093.865018,
+    "hash": "fae79478684b547b75600901a59bc042"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\test_camera.py": {
+    "mtime": 1771994632.7557821,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\test_detector.py": {
+    "mtime": 1771994632.9532363,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\test_tts.py": {
+    "mtime": 1771994632.8421402,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\scripts\\scripts\\download_piper_voices.py": {
+    "mtime": 1772089924.3672695,
+    "hash": "fae79478684b547b75600901a59bc042"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\tests\\test_all.py": {
+    "mtime": 1771994633.5428145,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\tests\\__init__.py": {
+    "mtime": 1771994633.3832426,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\venv311\\Scripts\\Activate.ps1": {
+    "mtime": 1778154437.3484266,
+    "hash": "0e96b6e0cf83baabd5289d691a2668ef"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\README.md": {
+    "mtime": 1772078484.6740766,
+    "hash": "db2d4376cb0e157da1b061b12fa15b20"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\requirements.txt": {
+    "mtime": 1778168888.632064,
+    "hash": "85e656a2aec1fe9f8d292f10ddada0c1"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\INFERENCE.md": {
+    "mtime": 1778152596.7436652,
+    "hash": "f160a2bec07aff67b8235b3fabba1bb8"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\README.md": {
+    "mtime": 1778152596.7489934,
+    "hash": "8e3f29933b2e36e0f45f19e5d9c0dbc1"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\parler-tts\\training\\README.md": {
+    "mtime": 1778152596.7873392,
+    "hash": "2569810d704490b8915cc60bacc0b1f4"
+  },
+  "C:\\Users\\Harshit\\Desktop\\NetraVision_ai\\indic_parler_out.wav": {
+    "mtime": 1778167404.2689505,
+    "hash": "761894903767260fd4fa755388db2853"
+  }
+}

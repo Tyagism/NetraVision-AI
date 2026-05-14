@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-03-06T07:28:02.329159",
+  "performance": {
+    "detection_latency_ms": 36.9503378868103,
+    "detection_fps": 27.063351979711054,
+    "depth_latency_ms": 42.82859802246094,
+    "depth_fps": 23.34888476796654,
+    "system_latency_ms": 83.02671909332275,
+    "system_fps": 12.044315503735506
+  },
+  "recommendations": [
+    "\u2705 System performance is acceptable"
+  ]
+}
