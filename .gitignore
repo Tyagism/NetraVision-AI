@@ -5,7 +5,9 @@ env/
 ENV/
 .venv
 
-# Python
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/.gitignore
 __pycache__/
 *.py[cod]
 *$py.class
