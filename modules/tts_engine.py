@@ -46,14 +46,7 @@ try:
 except ImportError:
     INDIC_TRANSLIT_AVAILABLE = False
 
-try:
-    from parler_tts import ParlerTTSForConditionalGeneration
-    from transformers import AutoTokenizer
-    import soundfile as sf
-    import torch
-    PARLER_AVAILABLE = True
-except ImportError:
-    PARLER_AVAILABLE = False
+
 
 logger = logging.getLogger(__name__)
 
@@ -99,10 +92,6 @@ class TTSEngine:
         self._translation_cache = {}  # Cache for translated sentences
         self.cooldown_seconds = 3.0
 
-        self.use_parler = False
-        self.parler_model = None
-        self.parler_tokenizer = None
-
         # Track message count for FIFO ordering within same priority
         self._counter = 0
 
@@ -136,10 +125,6 @@ class TTSEngine:
                     "bho": sanscript.DEVANAGARI
                 }
                 self.indic_script = indic_langs.get(base_lang)
-                
-                if base_lang in indic_langs and getattr(self, "PARLER_AVAILABLE", PARLER_AVAILABLE):
-                    # Keep Parler as an option but prioritize Piper for now per user request
-                    pass
                         
             except Exception as e:
                 logger.error(f"[ERROR] Failed to initialize translator: {e}")
@@ -346,9 +331,7 @@ class TTSEngine:
     def _speak(self, text):
         """Actually speak the text using the selected engine."""
         try:
-            if getattr(self, "use_parler", False) and self.parler_model:
-                self._speak_parler(text)
-            elif self.engine == "espeak":
+            if self.engine == "espeak":
                 self._speak_espeak(text)
             elif self.engine == "piper":
                 self._speak_piper(text)
@@ -452,46 +435,6 @@ class TTSEngine:
             except:
                 pass
 
-    def _speak_parler(self, text):
-        """Speak using Indic Parler-TTS."""
-        try:
-            prompt = "A female speaker delivers a clear and paced alert in a calm voice."
-            # Tokenize description and text
-            input_ids = self.parler_tokenizer(prompt, return_tensors="pt").input_ids.to(self.device)
-            prompt_input_ids = self.parler_tokenizer(text, return_tensors="pt").input_ids.to(self.device)
-
-            generation = self.parler_model.generate(
-                input_ids=input_ids,
-                prompt_input_ids=prompt_input_ids
-            )
-            
-            audio_arr = generation.cpu().numpy().squeeze()
-            sample_rate = self.parler_model.config.sampling_rate
-
-            if SOUNDDEVICE_AVAILABLE:
-                with self._lock:
-                    sd.play(audio_arr, samplerate=sample_rate)
-                    sd.wait()
-            else:
-                import tempfile
-                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
-                    temp_path = f.name
-                sf.write(temp_path, audio_arr, sample_rate)
-                if platform.system() == "Windows":
-                    import winsound
-                    winsound.PlaySound(temp_path, winsound.SND_FILENAME)
-                elif platform.system() == "Darwin":
-                    subprocess.run(["afplay", temp_path], check=False)
-                else:
-                    subprocess.run(["aplay", temp_path], check=False)
-                try:
-                    os.unlink(temp_path)
-                except:
-                    pass
-        except Exception as e:
-            logger.error(f"Parler-TTS synthesis failed: {e}")
-            self.use_parler = False  # disable on fail to fallback next time
-            self._speak_piper(text)
 
     def _interrupt(self):
         """Interrupt current speech for critical alerts."""
@@ -501,7 +444,7 @@ class TTSEngine:
                 self._current_process.terminate()
                 logger.info("[STOP] Speech process interrupted")
             
-            # 2. Stop sounddevice (piper/parler)
+            # 2. Stop sounddevice (piper)
             if SOUNDDEVICE_AVAILABLE:
                 import sounddevice as sd
                 sd.stop()

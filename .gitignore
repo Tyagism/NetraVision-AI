@@ -1,13 +1,15 @@
-# Virtual environments
+# ═══════════════════════════════════════════════════════
+# NetraVision AI — .gitignore
+# ═══════════════════════════════════════════════════════
+
+# ─── Virtual environments ───
 venv/
 venv311/
 env/
 ENV/
-.venv
+.venv/
 
-# Streamlit
-.streamlit/secrets.toml
-.streamlit/.gitignore
+# ─── Python bytecode & build artifacts ───
 __pycache__/
 *.py[cod]
 *$py.class
@@ -29,41 +31,55 @@ wheels/
 .installed.cfg
 *.egg
 
-# Model files (large)
+# ─── Model files (large binaries — download via scripts/download_models.py) ───
 *.pt
 *.onnx
 *.pth
+*.bin
 models/**/*.pt
 models/**/*.onnx
 models/**/*.pth
+models/**/*.bin
+# Keep the JSON config files for piper voices
+!models/piper/*.json
 
-# Caches
+# ─── Caches ───
 audio_cache/
-__pycache__/
 .cache/
 *.cache
-graphify-out/cache/
 
-# IDE
+# ─── IDE / Editor ───
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# ─── OS files ───
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Environment variables
+# ─── Environment variables (secrets) ───
 .env
 .env.local
 .env.*.local
 
-# Logs
+# ─── Streamlit secrets (NOT config) ───
+.streamlit/secrets.toml
+
+# ─── Logs ───
 *.log
 logs/
 
-# Transcripts and temporary files
-transcripts/
+# ─── Temporary / scratch files ───
 scratch/
+transcripts/
+*.wav
+*.mp3
+
+# ─── Gemini / Agent workspace (local-only) ───
+.agent/
+
+# ─── Graphify tool output (regenerable) ───
+graphify-out/

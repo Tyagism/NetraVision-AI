@@ -112,7 +112,7 @@ Thread 3: TTS & Audio Output
 | **Depth Estimator** | Distance estimation | MiDaS v2.1 |
 | **Spatial Mapper** | Sector mapping | Custom algorithm |
 | **Priority Engine** | Alert ranking | Rule-based |
-| **TTS Engine** | Speech synthesis | Piper TTS / Parler TTS |
+| **TTS Engine** | Speech synthesis | Piper TTS / espeak-ng |
 
 ---
 
@@ -146,8 +146,8 @@ Thread 3: TTS & Audio Output
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/NetraVision_ai.git
-cd NetraVision_ai
+git clone https://github.com/Tyagism/NetraVision-AI.git
+cd NetraVision-AI
 ```
 
 ### Step 2: Create Virtual Environment
@@ -427,9 +427,7 @@ NetraVision_ai/
 │
 ├── logs/                             # Application logs
 ├── audio_cache/                      # Cached TTS audio
-├── graphify-out/                     # Analysis outputs
-│
-└── parler-tts/                       # Optional Parler TTS module
+└── graphify-out/                     # Analysis outputs
 ```
 
 ---
@@ -547,7 +545,7 @@ Text-to-speech synthesis with multiple backends.
 
 **Supported Engines**:
 - **Piper**: Lightweight, offline, 15+ languages
-- **Parler**: More natural voice, English only
+- **espeak-ng**: Fallback engine, wide language support
 
 **Example**:
 ```python
@@ -845,7 +843,7 @@ If you use NetraVision AI in your research or project, please cite:
   author = {Harshit},
   title = {NetraVision AI: An Intelligent Assistive Vision System for the Visually Impaired},
   year = {2024},
-  url = {https://github.com/yourusername/NetraVision_ai}
+  url = {https://github.com/Tyagism/NetraVision-AI}
 }
 ```
 
@@ -867,9 +865,8 @@ This project was developed as part of a B.Tech. (Artificial Intelligence and Mac
 
 For questions, issues, or suggestions:
 
-- 📧 Email: [your-email@example.com]
-- 🐛 **GitHub Issues**: [Report bugs and request features](https://github.com/yourusername/NetraVision_ai/issues)
-- 💬 **Discussions**: [Join the community](https://github.com/yourusername/NetraVision_ai/discussions)
+- 🐛 **GitHub Issues**: [Report bugs and request features](https://github.com/Tyagism/NetraVision-AI/issues)
+- 💬 **Discussions**: [Join the community](https://github.com/Tyagism/NetraVision-AI/discussions)
 - 📖 **Documentation**: See [docs/](docs/) for detailed technical documentation
 
 ---
@@ -899,6 +896,6 @@ This system is designed as an assistive technology aid and should **not replace 
 
 ---
 
-**Last Updated**: May 2024  
+**Last Updated**: May 2026  
 **Version**: 1.0.0  
 **Status**: Active Development

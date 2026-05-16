@@ -36,4 +36,3 @@ requests==2.31.0
 huggingface_hub>=0.21.0
 transformers>=4.43.0
 deep-translator==1.11.4
-parler-tts

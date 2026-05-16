@@ -7,7 +7,6 @@ font = "sans serif"
 
 [client]
 showErrorDetails = true
-toolbarMode = "developer"
 
 [server]
 port = 8501
@@ -17,6 +16,3 @@ maxUploadSize = 1024
 
 [logger]
 level = "info"
-
-[client.toolbarMode]
-embedded = false
